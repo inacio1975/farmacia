@@ -34,7 +34,7 @@ else{
         }
     }
     else{
-        header('Location: ../view/login.php');
+        header('Location: ../index.php');
     }
 }
 

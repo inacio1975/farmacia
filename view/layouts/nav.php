@@ -33,7 +33,7 @@
     </ul>
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-        <a href="../controller/Logout.php">Cerrar Sesion</a>
+        <a href="../controller/Logout.php">Sair</a>
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -70,12 +70,12 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-header">USUÁRIOS</li>
           <li class="nav-item">
-            <a href="editar_datos_personales.php" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
+            <a href="../view/editar_datos_personales.php" class="nav-link">
+              <i class="nav-icon fas fa-user-cog"></i>
               <p>
-                Gallery
+                Usuários
               </p>
             </a>
           </li>

@@ -61,6 +61,6 @@ if($_SESSION['us_tipo']==1){
 include_once 'layouts/footer.php';
 }
 else{
-    header('Location: ../index.php');
+    header('Location: ../');
 }
 ?>

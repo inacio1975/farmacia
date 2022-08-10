@@ -14,5 +14,20 @@ class Usuario{
         $this->objectos = $query->fetchAll();
         return $this->objectos;
     }
+
+    function obtenerDatos($id){
+        $sql = "SELECT * FROM usuario INNER JOIN tipo_us ON us_tipo=id_tipo_us AND id_usuario=:id";
+        $query = $this->accesso->prepare($sql);
+        $query->execute(array(':id' => $id));
+        $this->objectos = $query->fetchAll();
+        return $this->objectos;
+    }
+
+    function actualizarUsuario($id_usuario, $telefone, $endereco, $email, $sexo, $adicional){
+        $sql = "UPDATE usuario SET telefono_us=:telefono, residencia_us=:residencia, correo_us=:email, sexo_us=:sexo,adicional_us=:adicional WHERE id_usuario=:id";
+        $query = $this->accesso->prepare($sql);
+        $query->execute(array(':id' => $id_usuario, ':telefono' => $telefone, ':residencia' => $endereco, ':email' => $email, ':sexo' => $sexo, ':adicional' => $adicional));
+
+    }
 }
 ?>
